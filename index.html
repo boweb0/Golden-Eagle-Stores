@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>محلات النسر الذهبي | قطر</title>
+<meta name="description" content="نموذج تجريبي لموقع محلات النسر الذهبي: خيام ومستلزمات رحلات وأجهزة منزلية، أسعار محدّثة، ولوحة تحكم لإدارة المنتجات.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Readex+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0B1020; --night-2:#121A33; --night-3:#1B2547;
+  --sand:#EBD6A6; --sand-2:#C9A867; --ember:#F0793A; --ember-2:#FFB26B;
+  --ink:#F4EBDD; --muted:#A9B0C7; --wa:#1FAF5A; --card:#151E3A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Readex Pro',system-ui,sans-serif;background:var(--night);color:var(--ink);line-height:1.8;font-size:16.5px;overflow-x:hidden}
+h1,h2,h3{font-family:'Lalezar','Readex Pro',sans-serif;font-weight:400;line-height:1.3;letter-spacing:.01em}
+html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3{font-family:'Readex Pro',sans-serif;font-weight:600;letter-spacing:-.01em}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--ember-2);outline-offset:3px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+
+/* header */
+header{position:fixed;inset-inline:0;top:0;z-index:40;transition:background .3s,backdrop-filter .3s,border-color .3s;border-bottom:1px solid transparent}
+header.solid{background:rgba(11,16,32,.82);backdrop-filter:blur(12px);border-color:rgba(235,214,166,.14)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Lalezar';font-size:1.5rem;color:var(--sand)}
+html[lang="en"] .brand{font-family:'Readex Pro';font-weight:600;font-size:1.1rem}
+.brand svg{width:34px;height:34px}
+nav{display:flex;gap:24px;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted);transition:color .2s}
+nav a:hover{color:var(--sand)}
+.tools{display:flex;gap:10px;align-items:center}
+.pill{border:1.5px solid rgba(235,214,166,.35);background:transparent;border-radius:999px;padding:7px 16px;cursor:pointer;font-size:.88rem;transition:.2s}
+.pill:hover{background:rgba(235,214,166,.1);border-color:var(--sand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;border:0;border-radius:12px;padding:13px 26px;font-weight:500;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(31,175,90,.35)}
+.btn.ember{background:var(--ember);color:#1a0d05}
+.btn.ember:hover{box-shadow:0 12px 28px rgba(240,121,58,.4)}
+.btn.sm{padding:9px 16px;font-size:.9rem;border-radius:10px}
+
+/* hero scene */
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden;background:linear-gradient(180deg,#070B18 0%,#0E1530 45%,#2A2349 78%,#5A3A55 100%)}
+.stars{position:absolute;inset:0}
+.stars i{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.2;animation:tw 3.6s ease-in-out infinite}
+@keyframes tw{50%{opacity:1;transform:scale(1.5)}}
+.moon{position:absolute;top:16%;inset-inline-start:12%;width:76px;height:76px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#FFF4D6,#E9D7A5);box-shadow:0 0 80px rgba(255,236,180,.4)}
+.layer{position:absolute;inset-inline:-5%;bottom:0;width:110%;will-change:transform}
+.l1{bottom:30%}.l2{bottom:14%}.l3{bottom:-1%}
+.camp{position:absolute;bottom:17%;inset-inline-end:22%;width:min(320px,42vw);will-change:transform}
+.flame{transform-origin:50% 100%;animation:fl 1.1s ease-in-out infinite alternate}
+.flame.b{animation-duration:.8s;animation-delay:.2s}
+@keyframes fl{from{transform:scale(1,.88) skewX(-3deg)}to{transform:scale(.92,1.08) skewX(3deg)}}
+.glow{position:absolute;bottom:14%;inset-inline-end:22%;width:min(360px,46vw);height:160px;background:radial-gradient(closest-side,rgba(240,121,58,.5),transparent);animation:gl 1.6s ease-in-out infinite alternate;pointer-events:none}
+@keyframes gl{to{opacity:.65;transform:scale(1.08)}}
+.hero-copy{position:absolute;z-index:3;inset-inline-start:0;inset-inline-end:0;top:22%}
+.hero h1{font-size:clamp(2.8rem,8vw,6.6rem);max-width:12ch;color:var(--ink);text-shadow:0 6px 40px rgba(0,0,0,.45)}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln span{display:block;transform:translateY(105%);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 .ln:nth-child(2) span{animation-delay:.18s;color:var(--sand)}
+@keyframes up{to{transform:none}}
+.hero p.lead{max-width:34ch;color:#d8d3e6;margin:18px 0 28px;font-size:1.12rem;opacity:0;animation:fade 1s .7s forwards}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fade 1s .95s forwards}
+@keyframes fade{to{opacity:1}}
+
+/* marquee */
+.marq{background:var(--ember);color:#1a0d05;overflow:hidden;white-space:nowrap;border-block:2px solid #1a0d05}
+.marq div{display:inline-flex;gap:46px;padding:12px 0;animation:mq 28s linear infinite;font-family:'Lalezar';font-size:1.35rem}
+html[lang="en"] .marq div{font-family:'Readex Pro';font-weight:600;font-size:1rem}
+@keyframes mq{to{transform:translateX(50%)}}
+html[dir="ltr"] .marq div{animation-name:mq2}
+@keyframes mq2{to{transform:translateX(-50%)}}
+
+section{padding:96px 0}
+.sec-h{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+.sec-h h2{font-size:clamp(2rem,4.4vw,3.4rem);color:var(--sand)}
+.sec-h p{color:var(--muted);max-width:44ch}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat{position:relative;overflow:hidden;min-height:340px;border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--card);border:1px solid rgba(235,214,166,.14);cursor:pointer;text-align:start;transition:transform .35s,border-color .35s}
+.cat::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 260px at 80% 0%,var(--c,rgba(240,121,58,.35)),transparent 70%);transition:opacity .4s;opacity:.7}
+.cat:hover{transform:translateY(-6px);border-color:var(--ember)}
+.cat:hover::before{opacity:1}
+.cat svg{position:absolute;top:22px;inset-inline-end:22px;width:120px;height:120px;opacity:.9;transition:transform .5s}
+.cat:hover svg{transform:rotate(-6deg) scale(1.1)}
+.cat h3{font-size:2rem;color:var(--ink);position:relative}
+.cat p{color:var(--muted);position:relative;max-width:26ch}
+
+/* shop */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.chip{padding:8px 20px;border-radius:999px;border:1.5px solid var(--night-3);background:var(--night-2);cursor:pointer;transition:.2s}
+.chip:hover{border-color:var(--ember)}
+.chip.on{background:var(--ember);color:#1a0d05;border-color:var(--ember)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.prod{background:var(--card);border:1px solid rgba(235,214,166,.12);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:transform .25s,border-color .25s;animation:pop .5s both}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}}
+.prod:hover{transform:translateY(-5px);border-color:rgba(240,121,58,.7)}
+.prod .art{height:130px;border-radius:14px;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.1),transparent 60%),var(--night-3);display:grid;place-items:center}
+.prod .art svg{width:76px;height:76px}
+.prod h3{font-family:'Readex Pro';font-weight:500;font-size:1.05rem;line-height:1.5}
+.price{display:flex;align-items:baseline;gap:6px;font-size:1.5rem;font-weight:600;color:var(--sand)}
+.price small{font-size:.8rem;color:var(--muted);font-weight:400}
+.tag{font-size:.74rem;color:var(--muted)}
+.out{opacity:.5}
+.out .btn{pointer-events:none;background:#3a4262}
+
+/* pitch */
+.pitch{background:linear-gradient(180deg,var(--night),var(--night-2))}
+.pitch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.feat{border-top:2px solid var(--ember);padding:18px 4px 0}
+.feat h3{font-size:1.5rem;color:var(--sand);margin-bottom:4px}
+.feat p{color:var(--muted)}
+.pitch .btn{margin-top:30px}
+
+footer{padding:60px 0 40px;border-top:1px solid rgba(235,214,166,.12)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
+footer h2{font-size:1.9rem;color:var(--sand)}
+footer p{color:var(--muted)}
+.note{margin-top:34px;text-align:center;font-size:.8rem;color:var(--muted);opacity:.7;width:100%}
+
+/* admin drawer */
+.fab{position:fixed;inset-inline-end:18px;bottom:18px;z-index:60;display:flex;gap:10px;flex-direction:column;align-items:flex-end}
+.fab .wa{width:56px;height:56px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.5)}
+.fab .wa svg{width:28px;height:28px}
+.fab .adm{background:var(--ember);color:#1a0d05;border:0;border-radius:999px;padding:11px 18px;font-weight:600;cursor:pointer;box-shadow:0 10px 28px rgba(0,0,0,.5)}
+.drawer{position:fixed;top:0;bottom:0;inset-inline-start:0;width:min(520px,100%);background:#0f1630;z-index:80;transform:translateX(102%);transition:transform .45s cubic-bezier(.2,.8,.2,1);border-inline-end:1px solid rgba(235,214,166,.2);display:flex;flex-direction:column}
+html[dir="ltr"] .drawer{transform:translateX(-102%)}
+html .drawer.open{transform:none}
+.drawer header{position:static;background:transparent;border:0;backdrop-filter:none;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(235,214,166,.14)}
+.drawer h2{font-size:1.6rem;color:var(--sand)}
+.drawer .body{padding:18px 20px;overflow:auto;flex:1}
+.drawer .hint{background:rgba(240,121,58,.12);border:1px solid rgba(240,121,58,.35);border-radius:12px;padding:10px 14px;font-size:.88rem;margin-bottom:16px}
+.arow{display:grid;grid-template-columns:1fr 86px auto;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid rgba(235,214,166,.1)}
+.arow input[type=text],.arow input[type=number]{width:100%;background:var(--night-3);color:var(--ink);border:1px solid #2c3866;border-radius:8px;padding:7px 10px;font:inherit;font-size:.92rem}
+.arow label{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--muted);grid-column:1/-1}
+.drawer .foot{padding:14px 20px;border-top:1px solid rgba(235,214,166,.14);display:flex;gap:10px;flex-wrap:wrap}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:70;opacity:0;pointer-events:none;transition:opacity .3s}
+.scrim.on{opacity:1;pointer-events:auto}
+.toast{position:fixed;bottom:24px;inset-inline-start:50%;transform:translate(-50%,40px);background:var(--sand);color:#1a0d05;padding:10px 20px;border-radius:999px;z-index:90;opacity:0;transition:.35s;font-weight:500}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+@media (max-width:860px){
+  nav{display:none}
+  .cats{grid-template-columns:1fr}
+  .cat{min-height:230px}
+  .camp{inset-inline-end:6%;width:54vw}.glow{inset-inline-end:2%;width:70vw}
+  .hero-copy{top:16%}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 .ln span,.hero p.lead,.hero .cta{transform:none;opacity:1}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 22c6-2 10-6 12-12 2 4 4 6 8 8 4-2 6-6 8-10 2 6 6 10 12 14-6 0-9 2-12 6l-2 12-4-6-4 6-2-12c-3-4-6-6-16-6z" fill="#EBD6A6"/><circle cx="24" cy="20" r="2.2" fill="#0B1020"/></svg>
+      <span data-i="brand"></span>
+    </a>
+    <nav>
+      <a href="#cats" data-i="n1"></a><a href="#shop" data-i="n2"></a><a href="#real" data-i="n3"></a><a href="#contact" data-i="n4"></a>
+    </nav>
+    <div class="tools">
+      <button class="pill" id="lang" aria-label="Language">EN</button>
+      <a class="btn sm" data-wa="" data-i="wa" href="#"></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="hero">
+  <div class="stars" id="stars"></div>
+  <div class="moon"></div>
+  <svg class="layer l1" data-s=".25" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path d="M0 220C160 140 300 160 460 210S760 260 940 190 1260 120 1440 200V320H0Z" fill="#2B2850"/></svg>
+  <svg class="layer l2" data-s=".5" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path d="M0 200C200 120 360 190 560 220S900 160 1100 150 1360 200 1440 180V320H0Z" fill="#4A3358"/></svg>
+  <div class="glow"></div>
+  <svg class="camp" data-s=".7" viewBox="0 0 320 220" aria-label="خيمة ونار مخيم">
+    <path d="M30 200 L130 40 L230 200Z" fill="#E9D3A0"/>
+    <path d="M130 40 L130 200 L30 200Z" fill="#C9A867"/>
+    <path d="M100 200 L130 120 L160 200Z" fill="#2a1a22"/>
+    <path d="M130 40 l0 -16" stroke="#EBD6A6" stroke-width="4"/><path d="M130 24 l22 8 -22 8z" fill="#F0793A"/>
+    <g transform="translate(250 200)">
+      <path d="M-24 0 L24 -8M-24 -8 L24 0" stroke="#5b3a2a" stroke-width="8" stroke-linecap="round"/>
+      <path class="flame" d="M0 -8 C-16 -22 -6 -40 0 -54 C8 -38 18 -24 0 -8Z" fill="#F0793A"/>
+      <path class="flame b" d="M0 -8 C-8 -18 -2 -30 0 -38 C5 -28 10 -20 0 -8Z" fill="#FFD28A"/>
+    </g>
+  </svg>
+  <svg class="layer l3" data-s="1" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true"><path d="M0 230C240 170 420 250 700 240S1180 170 1440 230V320H0Z" fill="#150F26"/></svg>
+  <div class="hero-copy"><div class="wrap">
+    <h1><span class="ln"><span id="h1a"></span></span><span class="ln"><span id="h1b"></span></span></h1>
+    <p class="lead" data-i="lead"></p>
+    <div class="cta"><a class="btn ember" href="#shop" data-i="cta1"></a><a class="btn" data-wa="" data-i="cta2" href="#"></a></div>
+  </div></div>
+</section>
+
+<div class="marq" aria-hidden="true"><div id="marq"></div></div>
+
+<section id="cats"><div class="wrap">
+  <div class="sec-h"><h2 data-i="catsT"></h2><p data-i="catsP"></p></div>
+  <div class="cats">
+    <button class="cat" data-f="tent" style="--c:rgba(240,121,58,.38)"><svg viewBox="0 0 120 120" fill="none" stroke="#EBD6A6" stroke-width="3" stroke-linejoin="round"><path d="M10 100L60 20l50 80z"/><path d="M60 20v80M40 100l20-40 20 40"/></svg><h3 data-i="c1"></h3><p data-i="c1p"></p></button>
+    <button class="cat" data-f="trip" style="--c:rgba(94,140,255,.32)"><svg viewBox="0 0 120 120" fill="none" stroke="#EBD6A6" stroke-width="3" stroke-linejoin="round"><circle cx="60" cy="42" r="22"/><path d="M38 42c8 6 36 6 44 0M60 20v44"/><path d="M26 108l14-26h40l14 26z"/></svg><h3 data-i="c2"></h3><p data-i="c2p"></p></button>
+    <button class="cat" data-f="home" style="--c:rgba(235,214,166,.28)"><svg viewBox="0 0 120 120" fill="none" stroke="#EBD6A6" stroke-width="3" stroke-linejoin="round"><rect x="22" y="14" width="76" height="92" rx="10"/><path d="M22 52h76M34 28v12M34 66v22"/></svg><h3 data-i="c3"></h3><p data-i="c3p"></p></button>
+  </div>
+</div></section>
+
+<section id="shop" style="padding-top:20px"><div class="wrap">
+  <div class="sec-h"><h2 data-i="shopT"></h2><p data-i="shopP"></p></div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="real" class="pitch"><div class="wrap">
+  <div class="sec-h"><h2 data-i="realT"></h2><p data-i="realP"></p></div>
+  <div class="pitch-grid">
+    <div class="feat"><h3 data-i="f1"></h3><p data-i="f1p"></p></div>
+    <div class="feat"><h3 data-i="f2"></h3><p data-i="f2p"></p></div>
+    <div class="feat"><h3 data-i="f3"></h3><p data-i="f3p"></p></div>
+    <div class="feat"><h3 data-i="f4"></h3><p data-i="f4p"></p></div>
+  </div>
+  <button class="btn ember" id="open2" data-i="tryAdmin"></button>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div><h2 data-i="brand"></h2><p data-i="loc"></p><p dir="ltr" style="text-align:start">WhatsApp: <a href="https://wa.me/97450112213">+974 5011 2213</a></p></div>
+  <a class="btn" data-wa="" data-i="wa" href="#"></a>
+  <p class="note" data-i="note"></p>
+</div></footer>
+
+<div class="fab">
+  <button class="adm" id="open" data-i="admin"></button>
+  <a class="wa" data-wa="" href="#" aria-label="WhatsApp"><svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3.5C9.1 3.5 3.5 9 3.5 15.8c0 2.3.7 4.5 1.9 6.3L3.7 28.5l6.6-1.7c1.7.9 3.7 1.4 5.7 1.4 6.9 0 12.5-5.5 12.5-12.3S22.9 3.5 16 3.5z"/><path fill="#1FAF5A" d="M12 10.5c-.4 0-.9.2-1.2.8-.4.8-.5 1.9.2 3.2 1.4 2.6 3.8 4.6 6.4 5.3 1 .3 1.8 0 2.3-.6.3-.4.5-.9.4-1.1l-2.2-1.1c-.3-.1-.6 0-.8.2l-.7.9c-.3.1-.6.1-.9 0-1.4-.7-2.5-1.8-3.2-3.2 0-.3 0-.6.2-.8l.6-.8c.2-.3.2-.6.1-.8l-.9-2c-.1-.3-.4-.4-.6-.5z"/></svg></a>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Admin">
+  <header><h2 data-i="admT"></h2><button class="pill" id="close" data-i="close"></button></header>
+  <div class="body">
+    <div class="hint" data-i="admHint"></div>
+    <div id="alist"></div>
+  </div>
+  <div class="foot"><button class="btn ember sm" id="add" data-i="add"></button><button class="pill" id="reset" data-i="reset"></button></div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script>
+const NUM = "97450112213";
+const go = t => "https://wa.me/" + NUM + (t ? "?text=" + encodeURIComponent(t) : "");
+
+const T = {
+ar:{brand:"محلات النسر الذهبي",n1:"الأقسام",n2:"المنتجات",n3:"موقعك الحقيقي",n4:"تواصل",wa:"واتساب",
+ h1a:"جهّز رحلتك",h1b:"من النسر الذهبي",lead:"خيام ومستلزمات رحلات وأجهزة منزلية وكهربائية، كل ما تحتاجه للبر والبيت في مكان واحد.",
+ cta1:"تصفح المنتجات",cta2:"اطلب عبر واتساب",
+ catsT:"ثلاثة أقسام، كل ما تحتاجه",catsP:"اضغط على أي قسم لتصفية المنتجات.",
+ c1:"الخيام",c1p:"خيام للعائلة والمخيمات بأحجام مختلفة.",c2:"مستلزمات الرحلات",c2p:"كراسي وطبخ وتبريد وإضاءة للبر.",c3:"أجهزة منزلية وكهربائية",c3p:"أجهزة تحتاجها في البيت والمجلس.",
+ shopT:"المنتجات",shopP:"الأسماء والأسعار هنا تجريبية لشرح الفكرة، وتُستبدل بمنتجاتكم الحقيقية.",
+ all:"الكل",tent:"خيام",trip:"مستلزمات رحلات",home:"أجهزة منزلية",
+ qar:"ر.ق",demoP:"سعر تجريبي",ask:"اطلب عبر واتساب",none:"غير متوفر",
+ realT:"هذا النموذج فقط، موقعكم الحقيقي أكبر",realP:"التصميم النهائي يُبنى على هوية محلاتكم وصوركم الحقيقية.",
+ f1:"لوحة تحكم",f1p:"أضف المنتجات وعدّل الأسعار وأوقف الصنف المنتهي بنفسك، دون الحاجة لمبرمج.",
+ f2:"أسعار محدّثة",f2p:"أي تعديل في اللوحة يظهر فوراً للزبون في الموقع.",
+ f3:"لغتان أو أكثر",f3p:"عربي وإنجليزي، ويمكن إضافة لغات أخرى لزبائن الجاليات.",
+ f4:"طلب عبر واتساب",f4p:"كل منتج بزر طلب يفتح محادثة جاهزة. بلا بوابة دفع.",
+ tryAdmin:"جرّب لوحة التحكم الآن",
+ loc:"أم صلال محمد وأم صنيم (بوهامور)، قطر",note:"نموذج تجريبي أعدّه BO Web. التصميم النهائي يكون خاصاً بكم.",
+ admin:"لوحة التحكم (تجريبية)",admT:"إدارة المنتجات",close:"إغلاق",admHint:"هذه لوحة تجريبية: التعديلات تظهر مباشرة في المتجر وتُحفظ في متصفحك فقط.",
+ add:"إضافة منتج",reset:"إعادة الضبط",nm:"اسم المنتج",avail:"متوفر",saved:"تم الحفظ",newP:"منتج جديد",
+ msg:n=>"مرحباً محلات النسر الذهبي، أرغب في الاستفسار عن: "+n,hello:"مرحباً محلات النسر الذهبي، أرغب في الاستفسار عن منتجاتكم."},
+en:{brand:"Golden Eagle Stores",n1:"Categories",n2:"Products",n3:"Your real site",n4:"Contact",wa:"WhatsApp",
+ h1a:"Gear up",h1b:"with Golden Eagle",lead:"Tents, trip essentials and home appliances. Everything for the desert and the home in one place.",
+ cta1:"Browse products",cta2:"Order on WhatsApp",
+ catsT:"Three departments, everything you need",catsP:"Tap a department to filter the products.",
+ c1:"Tents",c1p:"Family and camp tents in several sizes.",c2:"Trip essentials",c2p:"Chairs, cooking, cooling and lighting for the outdoors.",c3:"Home & electrical",c3p:"Appliances for the home and the majlis.",
+ shopT:"Products",shopP:"Names and prices here are placeholders to show the idea. They get replaced with your real products.",
+ all:"All",tent:"Tents",trip:"Trip essentials",home:"Home appliances",
+ qar:"QAR",demoP:"Sample price",ask:"Order on WhatsApp",none:"Unavailable",
+ realT:"This is only a preview. Your real site goes further",realP:"The final design is built around your brand and your real photos.",
+ f1:"Admin panel",f1p:"Add products, edit prices and hide sold-out items yourself, no developer needed.",
+ f2:"Always-current prices",f2p:"Any change in the panel shows instantly to customers on the site.",
+ f3:"Two or more languages",f3p:"Arabic and English, and more languages for expat customers.",
+ f4:"Order via WhatsApp",f4p:"Every product has an order button that opens a ready chat. No payment gateway.",
+ tryAdmin:"Try the admin panel now",
+ loc:"Umm Salal Mohammed and Umm Sneem (Bu Hamour), Qatar",note:"Preview prepared by BO Web. The final design is made specifically for you.",
+ admin:"Admin panel (demo)",admT:"Manage products",close:"Close",admHint:"This is a demo panel: edits show in the shop right away and are saved in your browser only.",
+ add:"Add product",reset:"Reset",nm:"Product name",avail:"Available",saved:"Saved",newP:"New product",
+ msg:n=>"Hello Golden Eagle Stores, I would like to ask about: "+n,hello:"Hello Golden Eagle Stores, I would like to ask about your products."}
+};
+
+const SEED = [
+ {id:1,cat:"tent",ar:"خيمة عائلية كبيرة",en:"Large family tent",p:850,on:true,ic:"tent"},
+ {id:2,cat:"tent",ar:"خيمة رحلات صغيرة",en:"Compact trip tent",p:320,on:true,ic:"tent"},
+ {id:3,cat:"trip",ar:"كرسي رحلات قابل للطي",en:"Folding camp chair",p:65,on:true,ic:"chair"},
+ {id:4,cat:"trip",ar:"موقد غاز محمول",en:"Portable gas stove",p:120,on:true,ic:"stove"},
+ {id:5,cat:"trip",ar:"صندوق تبريد",en:"Cooler box",p:140,on:true,ic:"cooler"},
+ {id:6,cat:"trip",ar:"كشاف إضاءة قابل للشحن",en:"Rechargeable lantern",p:75,on:true,ic:"lamp"},
+ {id:7,cat:"home",ar:"مروحة كهربائية",en:"Electric fan",p:180,on:true,ic:"fan"},
+ {id:8,cat:"home",ar:"غلاية ماء كهربائية",en:"Electric kettle",p:95,on:false,ic:"kettle"}
+];
+const ICONS={
+ tent:'<path d="M8 66L38 12l30 54z"/><path d="M38 12v54M26 66l12-24 12 24"/>',
+ chair:'<path d="M20 12l8 30h24l4-30M28 42l-8 26M52 42l8 26M20 12h36"/>',
+ stove:'<rect x="12" y="38" width="52" height="24" rx="6"/><path d="M24 38c0-12 6-16 14-22 8 6 14 10 14 22"/>',
+ cooler:'<rect x="10" y="26" width="56" height="40" rx="6"/><path d="M10 38h56M28 26v-8h20v8"/>',
+ lamp:'<path d="M26 66h24M30 66V34a8 8 0 0116 0v32M38 14V8M18 24l-5-3M58 24l5-3"/>',
+ fan:'<circle cx="38" cy="34" r="8"/><path d="M38 26c0-14 18-14 14-2M46 34c14 0 14 18 2 14M38 42c0 14-18 14-14 2M30 34c-14 0-14-18-2-14M38 42v22M26 66h24"/>',
+ kettle:'<path d="M18 30h36l4 34H14z"/><path d="M54 36c10 0 10 16 0 16M28 30v-6h16v6"/>'
+};
+const store = {
+ get(){ try{ const v=localStorage.getItem("ges_demo"); return v?JSON.parse(v):null }catch(e){ return null } },
+ set(v){ try{ localStorage.setItem("ges_demo",JSON.stringify(v)) }catch(e){} },
+ clear(){ try{ localStorage.removeItem("ges_demo") }catch(e){} }
+};
+let data = store.get() || JSON.parse(JSON.stringify(SEED));
+let lang = "ar", filter = "all";
+const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+const t = k => T[lang][k];
+
+function applyLang(){
+  document.documentElement.lang = lang; document.documentElement.dir = lang==="ar"?"rtl":"ltr";
+  $("#lang").textContent = lang==="ar"?"EN":"عربي";
+  $$("[data-i]").forEach(el => el.textContent = t(el.dataset.i));
+  $("#h1a").textContent = t("h1a"); $("#h1b").textContent = t("h1b");
+  document.title = t("brand");
+  $$("[data-wa]").forEach(a => { a.href = go(t("hello")); a.target="_blank"; a.rel="noopener"; });
+  const words = [t("c1"),t("c2"),t("c3"),t("tryAdmin")].slice(0,3);
+  $("#marq").innerHTML = Array(8).fill(words.map(w=>"<span>"+w+"</span><span>✦</span>").join("")).join("");
+  renderChips(); renderGrid(); renderAdmin();
+}
+function renderChips(){
+  const c=[["all",t("all")],["tent",t("tent")],["trip",t("trip")],["home",t("home")]];
+  $("#chips").innerHTML = c.map(([k,v])=>'<button class="chip'+(filter===k?" on":"")+'" data-f="'+k+'">'+v+'</button>').join("");
+  $$("#chips .chip").forEach(b=>b.onclick=()=>{filter=b.dataset.f;renderChips();renderGrid()});
+}
+function renderGrid(){
+  const items = data.filter(d => filter==="all" || d.cat===filter);
+  $("#grid").innerHTML = items.map((d,i)=>{
+    const name = lang==="ar" ? d.ar : (d.en||d.ar);
+    return '<article class="prod'+(d.on?"":" out")+'" style="animation-delay:'+(i*60)+'ms">'
+     +'<div class="art"><svg viewBox="0 0 76 76" fill="none" stroke="#EBD6A6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">'+(ICONS[d.ic]||ICONS.tent)+'</svg></div>'
+     +'<h3>'+esc(name)+'</h3>'
+     +'<div class="price">'+Number(d.p||0)+'<small>'+t("qar")+'</small></div><div class="tag">'+t("demoP")+'</div>'
+     +'<a class="btn sm" target="_blank" rel="noopener" href="'+go(T[lang].msg(name))+'">'+(d.on?t("ask"):t("none"))+'</a></article>';
+  }).join("");
+}
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])) }
+function renderAdmin(){
+  $("#alist").innerHTML = data.map(d=>'<div class="arow" data-id="'+d.id+'">'
+   +'<input type="text" aria-label="'+t("nm")+'" value="'+esc(lang==="ar"?d.ar:(d.en||d.ar))+'" data-k="name">'
+   +'<input type="number" min="0" aria-label="'+t("qar")+'" value="'+Number(d.p||0)+'" data-k="p">'
+   +'<span class="tag">'+t("qar")+'</span>'
+   +'<label><input type="checkbox" data-k="on" '+(d.on?"checked":"")+'> '+t("avail")+'</label></div>').join("");
+  $$("#alist .arow").forEach(row=>{
+    const d = data.find(x=>x.id==row.dataset.id);
+    row.querySelectorAll("input").forEach(inp=>inp.addEventListener("input",()=>{
+      const k=inp.dataset.k;
+      if(k==="name"){ if(lang==="ar") d.ar=inp.value; else d.en=inp.value }
+      else if(k==="p"){ d.p=Number(inp.value)||0 }
+      else { d.on=inp.checked }
+      store.set(data); renderGrid(); toast(t("saved"));
+    }));
+  });
+}
+let tt; function toast(m){ const e=$("#toast"); e.textContent=m; e.classList.add("on"); clearTimeout(tt); tt=setTimeout(()=>e.classList.remove("on"),1200) }
+
+// events
+$("#lang").onclick = ()=>{ lang = lang==="ar"?"en":"ar"; applyLang() };
+const openD = ()=>{ $("#drawer").classList.add("open"); $("#scrim").classList.add("on") };
+const closeD = ()=>{ $("#drawer").classList.remove("open"); $("#scrim").classList.remove("on") };
+$("#open").onclick = openD; $("#open2").onclick = openD; $("#close").onclick = closeD; $("#scrim").onclick = closeD;
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeD() });
+$("#add").onclick = ()=>{ data.push({id:Date.now(),cat:"trip",ar:t("newP"),en:t("newP"),p:100,on:true,ic:"lamp"}); store.set(data); renderGrid(); renderAdmin(); toast(t("saved")) };
+$("#reset").onclick = ()=>{ store.clear(); data = JSON.parse(JSON.stringify(SEED)); renderGrid(); renderAdmin(); toast(t("saved")) };
+$$(".cat").forEach(c=>c.onclick=()=>{ filter=c.dataset.f; renderChips(); renderGrid(); document.getElementById("shop").scrollIntoView({behavior:"smooth"}) });
+
+// scene: stars + parallax + sticky header
+(function(){
+  const s=$("#stars");
+  for(let i=0;i<70;i++){ const e=document.createElement("i"); e.style.cssText="left:"+(Math.random()*100)+"%;top:"+(Math.random()*60)+"%;animation-delay:"+(Math.random()*4)+"s;width:"+(1+Math.random()*2.5)+"px;height:"+(1+Math.random()*2.5)+"px"; s.appendChild(e) }
+  const layers=$$("[data-s]"), hdr=$("header"), hero=$(".hero");
+  let ticking=false;
+  function onScroll(){
+    const y=window.scrollY; hdr.classList.toggle("solid",y>40);
+    if(y<hero.offsetHeight) layers.forEach(l=>l.style.transform="translateY("+(y*(l.dataset.s*.18))+"px)");
+    ticking=false;
+  }
+  window.addEventListener("scroll",()=>{ if(!ticking){ requestAnimationFrame(onScroll); ticking=true } },{passive:true});
+  onScroll();
+})();
+applyLang();
+</script>
+</body>
+</html>
